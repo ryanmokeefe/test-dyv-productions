@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="inquiries.css" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".menu-icon").click(function () {
+                $(".menu-icon").toggleClass("active")
+            })
+            $(".menu-icon").click(function () {
+                $(".sidebar").toggleClass("active")
+            })
+        })
+    </script>
+</head>
+
+<body class="inquiries">
+    <h1 class="inquiries__heading">Graphic inquiries</h1>
+    <h4 class="inquiries__subheading"></h4>
+    <div class="inquiries__jumbotron">
+        This is where the real shit goes
+    </div>
+    <div class="menu-icon inquiries__menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="sidebar inquiries__sidebar">
+        <a href="#">
+            <img src="Logo3.png" class="logo2 inquiries__logo2">
+        </a>
+        <ul class="menu inquiries__menu">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Commercials</a>
+            </li>
+            <li>
+                <a href="#">Kids Story Books</a>
+            </li>
+            <li>
+                <a href="#">inquiriesers</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+        <ul class="social-icon inquiries__social-icon">
+            <li>
+                <a href="#">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="particles-js"></div>
+    <script type="text/javascript" src="particles.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script src="Script.js"></script>
+</body>
+
+<footer>
+</footer>
+
+</html>
