@@ -1,11 +1,9 @@
-
 body {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
+  height: 100vh;
 }
-h1
-{
+h1 {
   position: absolute;
   color: #fff;
   font-family: sans-serif;
@@ -16,8 +14,7 @@ h1
   padding: 100px;
   font-size: 50px;
 }
-h4
-{
+h4 {
   position: absolute;
   color: #fff;
   font-family: sans-serif;
@@ -28,14 +25,13 @@ h4
   padding: 90px;
   font-size: 10px;
 }
-#particles-js
-{
+#particles-js {
   height: 100%;
-background-image: url("cbh2.jpg");
-background-repeat: no-repeat;
-background-attachment: fixed;
+  background-image: url("cbh2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-.menu-icon{
+.menu-icon {
   position: fixed;
   top: 20px;
   right: 20px;
@@ -52,7 +48,7 @@ background-attachment: fixed;
   display: block;
   background: #fff;
   margin: 6px 0;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .sidebar {
@@ -62,20 +58,17 @@ background-attachment: fixed;
   width: 300px;
   height: 100vh;
   background: #262626;
-  transition: .5s;
+  transition: 0.5s;
   padding: 20px;
   text-align: center;
   box-sizing: border-box;
 }
 
-.sidebar.active
-{
+.sidebar.active {
   left: 0;
 }
 
-
-.sidebar .menu
-{
+.sidebar .menu {
   margin: 0;
   padding: 40px 0;
 }
@@ -95,10 +88,8 @@ background-attachment: fixed;
   text-decoration: none;
 }
 
-
-.sidebar .menu li a::before
-{
-  content: '';
+.sidebar .menu li a::before {
+  content: "";
   display: block;
   height: 5px;
   width: 100%;
@@ -108,8 +99,7 @@ background-attachment: fixed;
   width: 0%;
   transition: all ease-in-out 250ms;
 }
-.sidebar .menu li a:hover::before
-{
+.sidebar .menu li a:hover::before {
   width: 100%;
 }
 
@@ -123,17 +113,14 @@ background-attachment: fixed;
   top: calc(50% - 8px);
 }
 
-.menu-icon.active span:nth-child(1)
-{
+.menu-icon.active span:nth-child(1) {
   transform: rotate(45deg);
 }
-.menu-icon.active span:nth-child(3)
-{
+.menu-icon.active span:nth-child(3) {
   transform: rotate(-45deg);
 }
 
-.menu-icon.active span:nth-child(2)
-{
+.menu-icon.active span:nth-child(2) {
   display: none;
 }
 
@@ -147,15 +134,13 @@ background-attachment: fixed;
   width: 0 20px;
   box-sizing: border-box;
 }
-.social-icon li
-{
- width: 20%;
- text-align: center;
- list-style: none;
+.social-icon li {
+  width: 20%;
+  text-align: center;
+  list-style: none;
 }
 
-.social-icon li a
-{
+.social-icon li a {
   display: block;
   font-size: 18px;
   color: #fff;
@@ -164,14 +149,12 @@ background-attachment: fixed;
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.social-icon li a:hover
-{
+.social-icon li a:hover {
   background: #fc2827;
 }
-
 
 .logo2 {
   width: 100px;
