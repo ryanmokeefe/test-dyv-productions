@@ -3,17 +3,15 @@
   width: 100%;
   height: 100%;
 }
-body.design {
-  background-image: url("cbh2.jpg");
+body.inquiries {
+  background-image: url("img/cbh2.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
   width: 100%;
-  height: 100%;
 }
-.design__heading {
+.inquiries__heading {
   display: flex;
   flex-flow: row wrap;
   color: #fff;
@@ -22,7 +20,7 @@ body.design {
   text-transform: uppercase;
   width: auto;
 }
-.design__heading h1 {
+.inquiries__heading h1 {
   order: 1;
   position: relative;
   color: #fff;
@@ -33,7 +31,7 @@ body.design {
   width: 100%;
   height: auto;
 }
-.design__heading h4 {
+.inquiries__heading h4 {
   position: relative;
   color: #fff;
   font-family: sans-serif;
@@ -45,22 +43,12 @@ body.design {
   text-transform: uppercase;
   font-size: 10px;
 }
-.design__jumbotron {
-  position: relative;
-  color: #fff;
-  background: #564D46;
-  margin: 3rem 0 0 0;
-  padding: 2%;
-  opacity: .8;
-  width: 80%;
-  font-size: 1.2rem;
-  line-height: 2rem;
+.inquiries__jumbotron {
+  min-width: 100px;
+  min-height: 100px;
+  border: 2px solid green; /*---debug---*/
 }
-
-.design__jumbotron p{
-  opacity: 1;
-}
-.design__menu-icon {
+.inquiries__menu-icon {
   position: fixed;
   top: 20px;
   right: 20px;
@@ -71,7 +59,7 @@ body.design {
   cursor: pointer;
 }
 
-.design__menu-icon span {
+.inquiries__menu-icon span {
   width: 100%;
   height: 4px;
   display: block;
@@ -80,7 +68,7 @@ body.design {
   transition: 0.5s;
 }
 
-.design__sidebar {
+.inquiries__sidebar {
   position: fixed;
   top: 0;
   left: -300px;
@@ -93,22 +81,22 @@ body.design {
   box-sizing: border-box;
 }
 
-.design__sidebar.active {
+.inquiries__sidebar.active {
   left: 0;
 }
 
-.design__sidebar .menu {
+.inquiries__sidebar .menu {
   margin: 0;
   padding: 40px 0;
 }
 
-.design__sidebar .menu li {
+.inquiries__sidebar .menu li {
   list-style: none;
   font-family: calibri regular;
   position: relative;
 }
 
-.design__sidebar .menu li a {
+.inquiries__sidebar .menu li a {
   display: block;
   padding: 10px 0;
   text-transform: uppercase;
@@ -117,7 +105,7 @@ body.design {
   text-decoration: none;
 }
 
-.design__sidebar .menu li a::before {
+.inquiries__sidebar .menu li a::before {
   content: "";
   display: block;
   height: 5px;
@@ -128,32 +116,32 @@ body.design {
   width: 0%;
   transition: all ease-in-out 250ms;
 }
-.design__sidebar .menu li a:hover::before {
+.inquiries__sidebar .menu li a:hover::before {
   width: 100%;
 }
 
-.design__menu-icon.active {
+.inquiries__menu-icon.active {
   background: #fc2827;
   color: #fff;
 }
-.design__menu-icon.active span {
+.inquiries__menu-icon.active span {
   position: absolute;
   width: calc(100% - 16px);
   top: calc(50% - 8px);
 }
 
-.design__menu-icon.active span:nth-child(1) {
+.inquiries__menu-icon.active span:nth-child(1) {
   transform: rotate(45deg);
 }
-.design__menu-icon.active span:nth-child(3) {
+.inquiries__menu-icon.active span:nth-child(3) {
   transform: rotate(-45deg);
 }
 
-.design__menu-icon.active span:nth-child(2) {
+.inquiries__menu-icon.active span:nth-child(2) {
   display: none;
 }
 
-.design__social-icon {
+.inquiries__social-icon {
   margin: 0;
   padding: 0;
   position: absolute;
@@ -163,13 +151,13 @@ body.design {
   width: 0 20px;
   box-sizing: border-box;
 }
-.design__social-icon li {
+.inquiries__social-icon li {
   width: 20%;
   text-align: center;
   list-style: none;
 }
 
-.design__social-icon li a {
+.inquiries__social-icon li a {
   display: block;
   font-size: 18px;
   color: #fff;
@@ -181,11 +169,11 @@ body.design {
   transition: 0.5s;
 }
 
-.design__social-icon li a:hover {
+.inquiries__social-icon li a:hover {
   background: #fc2827;
 }
 
-.design__logo2 {
+.inquiries__logo2 {
   width: 100px;
   height: 100px;
 }
