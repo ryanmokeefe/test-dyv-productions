@@ -1,26 +1,41 @@
 #particles-js {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
+  background: none;
 }
 body.design {
-  background-image: url("../img/cbh2.jpg");
+  background-image: url("../img/joanna-kosinska-129039-unsplash.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: 25% 10%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   width: 100%;
   height: 100%;
 }
+.design__content__spacer{
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  color: #fff;
+  font-family: sans-serif;
+  margin: 0 0 0 0;
+  text-transform: uppercase;
+  width: auto;
+  height: 100vh;
+}
 .design__heading {
   display: flex;
   flex-flow: row wrap;
+  align-content: center;
   color: #fff;
   font-family: sans-serif;
-  margin: 5rem 0 0 0;
+  margin: 0 0 0 0;
   text-transform: uppercase;
   width: auto;
+  height: 100vh;
 }
 .design__heading h1 {
   order: 1;
@@ -45,20 +60,25 @@ body.design {
   text-transform: uppercase;
   font-size: 10px;
 }
-.design__jumbotron {
+.design__content {
   position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
   color: #fff;
   background: #564d46;
-  margin: 3rem 0 0 0;
   padding: 2%;
-  opacity: 0.8;
-  width: 80%;
+  opacity: 1;
   font-size: 1.2rem;
   line-height: 2rem;
+  height: 100%;
 }
 
-.design__jumbotron p {
-  opacity: 1;
+.design__content__top {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 83.5%;
 }
 .design__menu-icon {
   position: fixed;
@@ -195,9 +215,8 @@ body.design {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+  margin: 5rem 0 0 0;
+  height: 24rem;
 }
 
 /* Hide the images by default */
@@ -205,44 +224,6 @@ body.design {
   display: none;
 }
 
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
 
 /* Number text (1/3 etc) */
 .numbertext {
