@@ -23,38 +23,31 @@
 
 <body class="design">
     <div class="design__heading">
-        <h1>Graphic Design</h1>
-        <h4>Hey now, you're a rockstar.</h4>
+        <div class="design__heading__title" id="sticky-title">
+            <h1>Graphic Design</h1>
+            <h4>Hey now, you're a rockstar.</h4>
+        </div>
     </div>
-    <div class="design__content__spacer">
     </div>
     <div class="design__content">
-
-        <div class="design__content__top">
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <img src="img/design_spectrym.jpg">
-                </div>
-
-                <div class="mySlides fade">
-                    <img src="img/design_brakefast.jpg">
-                </div>
-
-                <div class="mySlides fade">
-                    <img src="img/design_gym.jpg">
-                </div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img class="design__img" src="img/design_spectrym.jpg">
             </div>
-            <br>
-            <p> We can dance if we want to, we've got all your life and mine As long as we abuse it, never gonna lose it Everything'll
-                work out right I say, we can dance if we want to we can leave your friends behind Cause your friends don't
-                dance and if they don't dance Well they're are no friends of mine I say we can dance, we can dance everything
-                out of control We can dance, we can dance we're doing it wall to wall We can dance, we can dance everybody
-                look at your hands We can dance, we can dance everybody's takin' the chance. This is the lore ipsum of the
-                everybody generation. Get with it or get behind me SATAN. There is no coming to consciousness without pain.
-                Come to hell. Come to hell.
-            </p>
+
+            <div class="mySlides fade">
+                <img class="design__img" src="img/design_brakefast.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img class="design__img" src="img/design_gym.jpg">
+            </div>
         </div>
-        <div id="particles-js"></div>
+        <p> We can dance if we want to, we've got all your life and mine As long as we abuse it, never gonna lose it Everything'll
+            work out right I say, we can dance if we want to we can leave your friends behind Cause your friends don't dance
+            and if they don't dance Well they're are no friends of mine I say we can dance, we can dance </p>
+    </div>
+    <!-- <div id="particles-js"></div> -->
 
     </div>
     <div class="menu-icon design__menu-icon">
@@ -117,6 +110,20 @@
         <script type="text/javascript" src="js/app.js"></script>
         <script type="text/javascript" src="js/carousel.js"></script>
         <!-- <script src="Script.js"></script> -->
+        <script>
+            window.onscroll = function () { myFunction() };
+
+            var navbar = document.getElementById("sticky-title");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky - 25) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
 </body>
 
 <footer>
