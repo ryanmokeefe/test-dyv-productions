@@ -1,0 +1,54 @@
+body
+{
+    /* box-sizing: border-box; */
+    /* overflow: hide; */
+    background: linear-gradient(grey, black);
+    max-width: 90%;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+heading, h1, h4
+{
+    max-width: 85%;
+}
+
+#particles-js 
+{
+    background-image: none;
+}
+.flex 
+{
+    display: flex;
+    border: 2px solid black;
+    flex-flow: row wrap;
+    /* align-items: center;
+    justify-content: center; */
+}
+.videoBody
+{
+    position: absolute;
+    height: 100%;
+    max-width: 80%;
+    margin: 200px 10% 0;
+    padding: 0;
+}
+video 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0; */
+}
+.gutter
+{
+    height: fit-content;
+    max-width: 49%;
+    margin: 0 auto;
+    padding: 5%;
+    background-color: rgba(255, 255, 255, .2);
+    /* add card shadow */
+
+}
