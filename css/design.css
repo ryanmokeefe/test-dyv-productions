@@ -77,8 +77,8 @@ body.design {
   padding: 0;
   text-transform: uppercase;
 }
-.design__content__main p {
-  padding: 0.2%;
+.design__content p {
+  width: 90;
 }
 .design__menu-icon {
   position: fixed;
