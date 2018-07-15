@@ -19,28 +19,24 @@ body.design {
   display: flex;
   flex-flow: row wrap;
   align-content: center;
-  color: #fff;
   font-family: sans-serif;
   margin: 0 0 0 0;
   text-transform: uppercase;
-  width: auto;
   height: 100vh;
 }
 .design__heading {
   display: flex;
   flex-flow: row wrap;
   align-content: center;
-  color: #fff;
   font-family: sans-serif;
   margin: 0 0 0 0;
   text-transform: uppercase;
-  width: auto;
   height: 100vh;
 }
 .design__heading h1 {
   order: 1;
   position: relative;
-  color: #fff;
+  color: rgb(0,0,0,.9);
   font-family: sans-serif;
   margin: 0 0 0 0;
   padding: 0;
@@ -50,7 +46,7 @@ body.design {
 }
 .design__heading h4 {
   position: relative;
-  color: #fff;
+  color:rgb(0,0,0,.9);
   font-family: sans-serif;
   text-align: center;
   margin: auto;
@@ -65,10 +61,10 @@ body.design {
   display: flex;
   flex-flow: column;
   align-items: center;
-  color: #fff;
-  background: #564d46;
+  justify-content: center;
+  color:  white;
+  background-color: rgba(0,0,0,0.85);
   padding: 2%;
-  opacity: 1;
   font-size: 1.2rem;
   line-height: 2rem;
   height: 100%;
@@ -215,8 +211,8 @@ body.design {
 
 /* Slideshow container */
 .slideshow-container {
-  margin: 5rem 0 0 0;
-  height: 24rem;
+  margin: 10rem 0 0 0;
+  height: 25rem;
 }
 
 /* Hide the images by default */
