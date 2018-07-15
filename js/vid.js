@@ -19,7 +19,7 @@ var oldSource = $(popoutVid).find("source");
 videos.click(function() {
 
     var sources = $(this).find( "source" );
-    $(popoutVid).append(sources);
+    $(sources).clone().appendTo(popoutVid);
     var video = $(popoutVid).get(0);
     video.load();
     popout.style.display = "flex";
@@ -32,33 +32,21 @@ videos.click(function() {
 var exit = $(".exit-popout");
 
 $(document).keydown(function(e) {
-    // DRY up
     if (e.keyCode == 27) {
-        var video = $(popoutVid).get(0);
-        video.pause();
-        oldSource = $(popoutVid).find("source");
-        $(oldSource).remove();
-
-        popout.style.display = "none";
+        clearPopout();
     }
 });
 
 exit.click(function() {
-// DRY up
+    clearPopout();
+});
+
+var clearPopout = () => {
     var video = $(popoutVid).get(0);
     video.pause();
     oldSource = $(popoutVid).find("source");
     $(oldSource).remove();
 
     popout.style.display = "none";
-});
-
-// var clearPopout = () => {
-//     var video = $(popoutVid).get(0);
-//     video.pause();
-//     oldSource = $(popoutVid).find("source");
-//     $(oldSource).remove();
-
-//     popout.style.display = "none";
-// }
+}
 
