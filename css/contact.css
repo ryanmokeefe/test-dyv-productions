@@ -28,11 +28,18 @@ body{
     to {background-color: rgb(61, 58, 15);}
 }
 
+.contact-form{
+    float: right;
+    padding-right: 70px;
+}
+
 .contact{
     margin-top: 100px;
-    color: #fff;
+    color: rgb(233, 231, 208);
     text-transform: uppercase;
+    text-align: center;
     font-family: 'Coustard', serif; 
+    font-size: 60px;
     transition: all 4s ease-in-out;
 }
 
@@ -49,7 +56,8 @@ form{
 
 .form-control{
     width: 600px;
-    background: transparent;
+    background: black;
+    opacity: 0.8;
     border: none;
     outline: none;
     border-bottom: 1px solid gray;
