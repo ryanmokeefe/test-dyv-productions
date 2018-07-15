@@ -1,0 +1,27 @@
+/* body{
+    background-image: url('../img/earth.jpg');
+
+} */
+
+body, html {
+    height: 100%;
+}
+
+.background { 
+    background-image: url("../img/earth.jpg");
+    height: 100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact{
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 40px;
+    font-family: 'Coustard', serif;
+
+    
+}
