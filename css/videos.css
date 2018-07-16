@@ -7,31 +7,34 @@ body
 }
 .heading
 {
-    height: 120px;
+    height: 15vw;
     margin: 100px 0 0;
     box-sizing: border-box;
     overflow: hidden;
 }
-h1, h4
+h1, h3
 {
     box-sizing: border-box;
     overflow: hidden;
     width: 100vw;
-    height: 100px;
-    padding: 20px 0 20px 100px;
+    height: 140px;
+    padding: 30px 0 20px 80px;
     text-align: left;
 }
 h1
 {
-    background-color: #111;
     top: 0;
-    
-    /* font-family: 'Trebuchet MS', sans-serif; */
-    /* letter-spacing: 5px; */
+    letter-spacing: 5px;
+    font-family: Verdana, sans-serif;
+    background-color: #111;
+    box-shadow: 3px 3px 10px #444;
 }
-h4
+h3
 {
     margin: 80px 0 0;
+    color: #888;
+    font-family: Palatino;
+    font-style: italic;
 }
 #particles-js 
 {
@@ -43,7 +46,7 @@ h4
 {
     display: flex;
     flex-flow: row wrap;
-    /* border: 2px solid white; */
+        /* border: 2px solid white; */
     align-items: center;
     justify-content: center;
     padding: 0;
@@ -54,8 +57,8 @@ h4
     position: absolute;
     height: 100%;
     max-width: 80%;
-    margin: 300px 10% 0;
-    padding: 0;
+    margin: 100px auto;
+    padding: 0 0 0 60px;
 }
 .video 
 {
@@ -63,28 +66,47 @@ h4
     justify-content: center;
     align-items: center;
     cursor: pointer;
-}
-video:hover
-{
-    box-shadow: 1px 1px 5px rgba(255, 255, 255, .7);
+    max-width: 90%;
 }
 .gutter
 {
     height: fit-content;
-    max-width: 49%;
-    margin: 0 auto;
-    padding: 0;
-    /* background-color: rgba(255, 255, 255, .2); */
+    max-width: 33%;
+    margin: 0;
+    padding: 0 0 20px 0;
+}
+.gutter-header
+{
+    width: 100%;
+    top: 0;
+    margin: 0 0 10px 0;
 }
 .gutter h2, .gutter p
 {
+    padding: 5px 25px;
+    text-align: left;
     color: #fff;
-    width: 100%;
-    text-align: center;
+    letter-spacing: 1px;
 }
 .gutter p
 {
-    letter-spacing: 1px;
+    color: #888;
+    font-family: Palatino;
+    font-style: italic;
+
+}
+.gutter:hover 
+{
+    box-shadow: 1px 1px 7px rgba(255, 255, 255, .5);
+}
+.gutter:hover .gutter-header
+{
+    background-color: #111;
+}
+.gutter:hover video
+{
+    max-width: 100%;
+
 }
 #popout
 {
@@ -98,8 +120,6 @@ video:hover
     padding: 0;
 }
 
-/*  */
-
 .exit-popout
 {
     display: flex;
@@ -112,6 +132,7 @@ video:hover
     width: 80px;
     background-color: rgb(60, 60, 60);
     color: #fff;
+    cursor: pointer;
 }
 
 .exit-popout span {
@@ -135,5 +156,4 @@ video:hover
   .exit-popout span:nth-child(2) {
     display: none;
   }
-
 
