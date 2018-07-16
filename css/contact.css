@@ -14,54 +14,23 @@ body{
     font-family: 'Custard', serif;
     /* background-repeat: no-repeat; */
 }
-/* 
-#number{
-    color: rgb(233, 231, 208);
-}
 
-#find-us{
-    color: rgb(233, 231, 208);
-}
-
-#instagram{
-    width: 20px;
-    height: 20px;
-} */
-
-/* .background { 
-    background-image: url("../img/earth.jpg");
-    height: 100%; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-
-@keyframes move{
-    from {background-color: rgb(94, 24, 24);}
-    to {background-color: rgb(61, 58, 15);}
-}
-
-.contact-form{
-    float: center;
-    padding-right: 70px;
-}
-
-/* .getintouch{
-    color: rgb(233, 231, 208);
-    float: left;
-    padding-top: 140px;
-    margin-left: 80px;
-} */
 
 .contact{
-    margin-top: 100px;
-    margin-right: 47px;
+    margin: 0 auto;
+    /* margin-right: 47px; */
     color: rgb(233, 231, 208);
     text-transform: uppercase;
     text-align: center;
     font-family: 'Coustard', serif; 
     font-size: 60px;
     transition: all 4s ease-in-out;
+}
+
+.contact-form{
+    margin: 0 auto;
+    padding-top: 300px;
+    /* align-items: center; */
 }
 
 .contact h1{
@@ -71,6 +40,7 @@ body{
 
 form{
     margin-top: 50px;
+
     transition: all 4s ease-in-out;
     /* border-radius: 15px; */
 }
@@ -107,9 +77,21 @@ form .submit:hover{
     cursor: pointer;
 }
 
-/* #info{
-    float: left;
-    margin-left: 300px;
-    padding-top: 10px;
-    font-size: 40px;
-} */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* Styles */
+
+    .contact{
+        text-align: center;
+        padding-left: 36px;
+    }
+
+    .contact-form{
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+
+
+
+
+    }
+
