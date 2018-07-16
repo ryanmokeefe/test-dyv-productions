@@ -15,6 +15,19 @@ body{
     /* background-repeat: no-repeat; */
 }
 
+#number{
+    color: white;
+}
+
+#find-us{
+    color: white;
+}
+
+#instagram{
+    width: 20px;
+    height: 20px;
+}
+
 /* .background { 
     background-image: url("../img/earth.jpg");
     height: 100%; 
@@ -33,16 +46,16 @@ body{
     padding-right: 70px;
 }
 
-.getintouch{
+/* .getintouch{
     color: rgb(233, 231, 208);
     float: left;
     padding-top: 140px;
     margin-left: 80px;
-}
+} */
 
 .contact{
     margin-top: 100px;
-    margin-right: 380px;
+    margin-right: 47px;
     color: rgb(233, 231, 208);
     text-transform: uppercase;
     text-align: center;
@@ -92,4 +105,9 @@ form .submit{
 form .submit:hover{
     background: rgb(94, 24, 24);
     cursor: pointer;
+}
+
+#info{
+    float: left;
+    margin-left: 300px;
 }
