@@ -8,11 +8,12 @@ body{
     padding: 0;
     text-align: center;
     background: url("../img/earth.jpg");
+    width: 100%;
+    height: auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     font-family: 'Custard', serif;
-    /* background-repeat: no-repeat; */
 }
 
 
@@ -77,21 +78,11 @@ form .submit:hover{
     cursor: pointer;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    /* Styles */
 
-    .contact{
-        text-align: center;
-        padding-left: 36px;
-    }
+ @media only screen and (max-width: 1024px) {
+    body {
+        background-size: 220vh;
+        }
+      }
 
-    .contact-form{
-        padding-left: 10px;
-        padding-right: 20px;
-    }
-
-
-
-
-    }
 
