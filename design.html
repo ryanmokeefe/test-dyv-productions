@@ -22,190 +22,41 @@
 </head>
 
 <body class="design">
-    <div id="particles-js"></div>
     <div class="design__heading">
-        <h1>Graphic Design</h1>
-        <h4>Hey now, you're a rockstar.</h4>
+        <div class="design__heading__title" id="sticky-title">
+            <h1>Graphic Design</h1>
+            <h4>Hey now, you're a rockstar.</h4>
+        </div>
     </div>
-    <div class="design__jumbotron">
-        <!DOCTYPE html>
-        <html>
-
-        <head>
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <style>
-                * {
-                    box-sizing: border-box
-                }
-
-                body {
-                    font-family: Verdana, sans-serif;
-                    margin: 0
-                }
-
-                .mySlides {
-                    display: none
-                }
-
-                img {
-                    vertical-align: middle;
-                }
-
-                /* Slideshow container */
-
-                .slideshow-container {
-                    max-width: 1000px;
-                    position: relative;
-                    margin: auto;
-                }
-
-                /* Next & previous buttons */
-
-                .prev,
-                .next {
-                    cursor: pointer;
-                    position: absolute;
-                    top: 50%;
-                    width: auto;
-                    padding: 16px;
-                    margin-top: -22px;
-                    color: white;
-                    font-weight: bold;
-                    font-size: 18px;
-                    transition: 0.6s ease;
-                    border-radius: 0 3px 3px 0;
-                }
-
-                /* Position the "next button" to the right */
-
-                .next {
-                    right: 0;
-                    border-radius: 3px 0 0 3px;
-                }
-
-                /* On hover, add a black background color with a little bit see-through */
-
-                .prev:hover,
-                .next:hover {
-                    background-color: rgba(0, 0, 0, 0.8);
-                }
-
-                /* Caption text */
-
-                .text {
-                    color: #f2f2f2;
-                    font-size: 15px;
-                    padding: 8px 12px;
-                    position: absolute;
-                    bottom: 8px;
-                    width: 100%;
-                    text-align: center;
-                }
-
-                /* Number text (1/3 etc) */
-
-                .numbertext {
-                    color: #f2f2f2;
-                    font-size: 12px;
-                    padding: 8px 12px;
-                    position: absolute;
-                    top: 0;
-                }
-
-                /* The dots/bullets/indicators */
-
-                .dot {
-                    cursor: pointer;
-                    height: 15px;
-                    width: 15px;
-                    margin: 0 2px;
-                    background-color: #bbb;
-                    border-radius: 50%;
-                    display: inline-block;
-                    transition: background-color 0.6s ease;
-                }
-
-                .active,
-                .dot:hover {
-                    background-color: #717171;
-                }
-
-                /* Fading animation */
-
-                .fade {
-                    -webkit-animation-name: fade;
-                    -webkit-animation-duration: 1.5s;
-                    animation-name: fade;
-                    animation-duration: 1.5s;
-                }
-
-                @-webkit-keyframes fade {
-                    from {
-                        opacity: .4
-                    }
-                    to {
-                        opacity: 1
-                    }
-                }
-
-                @keyframes fade {
-                    from {
-                        opacity: .4
-                    }
-                    to {
-                        opacity: 1
-                    }
-                }
-
-                /* On smaller screens, decrease text size */
-
-                @media only screen and (max-width: 300px) {
-                    .prev,
-                    .next,
-                    .text {
-                        font-size: 11px
-                    }
-                }
-            </style>
-        </head>
-
-        <body>
+    </div>
+    <div class="design__content">
+        <div class="design__content__top">
             <div class="slideshow-container">
-
                 <div class="mySlides fade">
-                    <div class="numbertext">1 / 3</div>
-                    <img src="img/design_gym.jpg" style="width:100%">
-                    <div class="text">Caption Text</div>
+                    <img class="design__img" src="img/design_spectrym.jpg">
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numbertext">2 / 3</div>
-                    <img src="img/design_brakefast.jpg" style="width:100%">
-                    <div class="text">Caption Two</div>
+                    <img class="design__img" src="img/design_brakefast.jpg">
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numbertext">3 / 3</div>
-                    <img src="img/design_canine.jpg" style="width:100%">
-                    <div class="text">Caption Three</div>
+                    <img class="design__img" src="img/design_gym.jpg">
                 </div>
-
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-            </div>
-            <br>
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
             <p> We can dance if we want to, we've got all your life and mine As long as we abuse it, never gonna lose it Everything'll
                 work out right I say, we can dance if we want to we can leave your friends behind Cause your friends don't
-                dance and if they don't dance Well they're are no friends of mine I say we can dance, we can dance everything
-                out of control We can dance, we can dance we're doing it wall to wall We can dance, we can dance everybody
-                look at your hands We can dance, we can dance everybody's takin' the chance
+                dance and if they don't dance Well they're are no friends of mine I say we can dance, we can dance
             </p>
+        </div>
+        <div class="design__content__center">
+            <script>
+                document.createElement(tagName[, options]);
+            </script>
+        </div>
+    </div>
+    <!-- <div id="particles-js"></div> -->
+
     </div>
     <div class="menu-icon design__menu-icon">
         <span></span>
@@ -267,9 +118,23 @@
         <script type="text/javascript" src="js/app.js"></script>
         <script type="text/javascript" src="js/carousel.js"></script>
         <!-- <script src="Script.js"></script> -->
-        </body>
+        <script>
+            window.onscroll = function () { myFunction() };
 
-        <footer>
-        </footer>
+            var navbar = document.getElementById("sticky-title");
+            var sticky = navbar.offsetTop;
 
-        </html>
+            function myFunction() {
+                if (window.pageYOffset >= sticky - 25) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+</body>
+
+<footer>
+</footer>
+
+</html>
