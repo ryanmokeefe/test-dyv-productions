@@ -14,19 +14,19 @@ body{
     font-family: 'Custard', serif;
     /* background-repeat: no-repeat; */
 }
-
+/* 
 #number{
-    color: white;
+    color: rgb(233, 231, 208);
 }
 
 #find-us{
-    color: white;
+    color: rgb(233, 231, 208);
 }
 
 #instagram{
     width: 20px;
     height: 20px;
-}
+} */
 
 /* .background { 
     background-image: url("../img/earth.jpg");
@@ -42,7 +42,7 @@ body{
 }
 
 .contact-form{
-    float: right;
+    float: center;
     padding-right: 70px;
 }
 
@@ -107,7 +107,9 @@ form .submit:hover{
     cursor: pointer;
 }
 
-#info{
+/* #info{
     float: left;
     margin-left: 300px;
-}
+    padding-top: 10px;
+    font-size: 40px;
+} */
