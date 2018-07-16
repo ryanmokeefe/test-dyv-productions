@@ -1,67 +1,31 @@
-/* body{
-    background-image: url('../img/earth.jpg');
-
-} */
-
 body{
     margin: 0;
     padding: 0;
     text-align: center;
     background: url("../img/earth.jpg");
+    width: 100%;
+    height: auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     font-family: 'Custard', serif;
-    /* background-repeat: no-repeat; */
 }
 
-#number{
-    color: white;
-}
-
-#find-us{
-    color: white;
-}
-
-#instagram{
-    width: 20px;
-    height: 20px;
-}
-
-/* .background { 
-    background-image: url("../img/earth.jpg");
-    height: 100%; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-
-@keyframes move{
-    from {background-color: rgb(94, 24, 24);}
-    to {background-color: rgb(61, 58, 15);}
-}
-
-.contact-form{
-    float: right;
-    padding-right: 70px;
-}
-
-/* .getintouch{
-    color: rgb(233, 231, 208);
-    float: left;
-    padding-top: 140px;
-    margin-left: 80px;
-} */
 
 .contact{
-    margin-top: 100px;
-    margin-right: 47px;
+    margin: 0 auto;
     color: rgb(233, 231, 208);
     text-transform: uppercase;
     text-align: center;
     font-family: 'Coustard', serif; 
     font-size: 60px;
     transition: all 4s ease-in-out;
+}
+
+.contact-form{
+    margin: 0 auto;
+    padding-top: 300px;
+   
 }
 
 .contact h1{
@@ -71,8 +35,9 @@ body{
 
 form{
     margin-top: 50px;
+
     transition: all 4s ease-in-out;
-    /* border-radius: 15px; */
+   
 }
 
 .form-control{
@@ -107,7 +72,12 @@ form .submit:hover{
     cursor: pointer;
 }
 
-#info{
-    float: left;
-    margin-left: 300px;
-}
+
+ @media only screen and (max-width: 1024px) {
+    body {
+        background-size: 220vh;
+        }
+      }
+
+
+      

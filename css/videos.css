@@ -17,12 +17,14 @@ h1, h3
     box-sizing: border-box;
     overflow: hidden;
     width: 100vw;
-    height: 140px;
     padding: 30px 0 20px 80px;
     text-align: left;
 }
 h1
 {
+    height: 140px;
+    z-index: 1;
+    position: fixed;
     top: 0;
     letter-spacing: 5px;
     font-family: Verdana, sans-serif;
@@ -31,21 +33,26 @@ h1
 }
 h3
 {
-    margin: 80px 0 0;
+    height: 240px;
+    position: absolute;
+    z-index: 0;
+    margin: 45px 0 0;
     color: #888;
     font-family: Palatino;
     font-style: italic;
+    padding-top: 50px;
+        /* delete: */
+        background-color: seagreen;
 }
-#particles-js 
+.menu-icon, .sidebar 
 {
-    background-image: none;
-    margin: 0 auto;
-    width: 100vw;
+    z-index: 1;
 }
 .flex 
 {
     display: flex;
     flex-flow: row wrap;
+        /* delete: */
         /* border: 2px solid white; */
     align-items: center;
     justify-content: center;
@@ -57,7 +64,7 @@ h3
     position: absolute;
     height: 100%;
     max-width: 80%;
-    margin: 100px auto;
+    margin: 300px auto;
     padding: 0 0 0 60px;
 }
 .video 
@@ -93,7 +100,6 @@ h3
     color: #888;
     font-family: Palatino;
     font-style: italic;
-
 }
 .gutter:hover 
 {
@@ -106,10 +112,10 @@ h3
 .gutter:hover video
 {
     max-width: 100%;
-
 }
 #popout
 {
+    z-index: 1;
     display: none;
     align-items: center;
     justify-content: center;
@@ -119,7 +125,6 @@ h3
     margin: 0;
     padding: 0;
 }
-
 .exit-popout
 {
     display: flex;
@@ -134,7 +139,6 @@ h3
     color: #fff;
     cursor: pointer;
 }
-
 .exit-popout span {
     height: 4px;
     display: block;
@@ -144,16 +148,64 @@ h3
     position: absolute;
     width: calc(100% - 16px);
     top: calc(50% - 8px);
-  }
-  
-  .exit-popout span:nth-child(1) {
+}
+.exit-popout span:nth-child(1) {
     transform: rotate(45deg);
-  }
-  .exit-popout span:nth-child(3) {
+}
+.exit-popout span:nth-child(3) {
     transform: rotate(-45deg);
-  }
-  
-  .exit-popout span:nth-child(2) {
-    display: none;
-  }
+}
 
+.exit-popout span:nth-child(2) {
+    display: none;
+}
+
+/* Film Reel */
+.inline
+{
+    display: inline;
+}
+.filmReel
+{
+    position: absolute;
+    /* SAME position: use for setting fixed point on scroll */
+    /* top: 493px; */
+    bottom: -100px;
+    z-index: 2;
+    background-color: rgba(255, 0, 0, .3);
+    /* background-image: url("video/FilmStrip.png"); */
+    /* background-position: center; */
+        /* RESIZE to film strip img size */
+    height: 250px;
+    width: 100vw;
+    margin: 0 0 100px 0;
+}
+
+.previousButton, .nextButton
+{
+    height: 0;
+    width: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+}
+.previousButton
+{
+    border-right: 60px solid rgba(255, 255, 255, .7);
+}
+.previousButton:hover
+{
+    cursor: pointer;
+    border-right: 60px solid rgba(255, 255, 255, 1);
+}
+.nextButton
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 60px solid rgba(255, 255, 255, .7);
+}
+.nextButton:hover
+{
+    cursor: pointer;
+    border-left: 60px solid rgba(255, 255, 255, 1);
+}
