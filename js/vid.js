@@ -17,7 +17,6 @@ var oldSource = $(popoutVid).find("source");
 
 
 videos.click(function() {
-
     var sources = $(this).find( "source" );
     $(sources).clone().appendTo(popoutVid);
     var video = $(popoutVid).get(0);
@@ -48,5 +47,25 @@ var clearPopout = () => {
     $(oldSource).remove();
 
     popout.style.display = "none";
-}
+};
 
+// Fix Film Reel to top on scroll:
+
+var reel = $("#filmReel");
+var reelPos = reel.offset();
+$(window).resize(function() {
+    reelPos = reel.offset();
+
+});
+
+
+// make responsive (bool if window is X size / or if filmReel starts at fixed-class?)
+$(window).scroll(function() {
+    if ($(window).scrollTop() >= (reelPos.top - 140))
+    {
+        reel.addClass("fixedReel");
+    } else 
+    {
+        reel.removeClass("fixedReel");
+    }
+});

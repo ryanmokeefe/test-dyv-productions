@@ -1,3 +1,6 @@
+
+/* 320px */
+
 body
 {
     box-sizing: border-box;
@@ -8,7 +11,7 @@ body
 .heading
 {
     height: 15vw;
-    margin: 100px 0 0;
+    margin: 6.25em 0 0;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -17,76 +20,128 @@ h1, h3
     box-sizing: border-box;
     overflow: hidden;
     width: 100vw;
-    padding: 30px 0 20px 80px;
+    padding: .5em 0 1.25em 1em;
     text-align: left;
 }
 h1
 {
-    height: 140px;
+    height: 4em;
     z-index: 1;
     position: fixed;
     top: 0;
-    letter-spacing: 5px;
     font-family: Verdana, sans-serif;
+    text-align: left;
+    letter-spacing: .5em;
+    line-height: 1.5em;
     background-color: #111;
     box-shadow: 3px 3px 10px #444;
 }
 h3
 {
-    height: 240px;
+    height: 15em;
     position: absolute;
     z-index: 0;
-    margin: 45px 0 0;
-    color: #888;
+    margin: 6.25em 0 0;
+    padding-top: 3.125em;
+    font-size: 3em;
     font-family: Palatino;
     font-style: italic;
-    padding-top: 50px;
-        /* delete: */
-        background-color: seagreen;
+    color: #999;
 }
 .menu-icon, .sidebar 
 {
-    z-index: 1;
+    z-index: 3;
 }
+.menu-icon
+{
+    top: 2.5em;
+    right: 2.5em;
+    width: 6.25em;
+    height: 5.5em;
+    background-color: #444;
+}
+.menu-icon span {
+    height: .5em;
+    margin: 1em 0;
+}
+.sidebar {
+    left: -40em;
+    width: 40em;
+    padding: 2.5em;
+}
+.sidebar.active
+{
+    background-color: #555;
+}
+.sidebar .menu {
+  padding: 5em 0;
+}
+.sidebar .menu li a {
+  padding: 1em 0;
+  font-size: 3em;
+}
+.menu-icon.active span {
+  width: calc(100% - 1em);
+  top: calc(50% - 1em);
+}
+.social-icon {
+    bottom: 5em;
+    width: 0 2.5em;
+  }
+.social-icon li a {
+    font-size: 4em;
+    width: 2em;
+    height: 2em;
+    line-height: 2.25em;
+  }
+.logo2 {
+    width: 12.5em;
+    height: 12.5em;
+}
+
 .flex 
 {
     display: flex;
-    flex-flow: row wrap;
-        /* delete: */
-        /* border: 2px solid white; */
+    flex-flow: column;
     align-items: center;
     justify-content: center;
     padding: 0;
     margin: 0;
 }
+
 .videoBody
 {
+            border: 2px solid white;
+    align-items: center;
+    justify-content: space-between;
     position: absolute;
     height: 100%;
-    max-width: 80%;
-    margin: 300px auto;
-    padding: 0 0 0 60px;
+    width: 90vw;
+    margin: 34.375em auto;
+    padding: 0 0 0 3.75em;
 }
 .video 
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    max-width: 90%;
+    width: 100%;
+    height: 100%;
 }
 .gutter
 {
-    height: fit-content;
-    max-width: 33%;
-    margin: 0;
-    padding: 0 0 20px 0;
+    height: 20em;
+    width: 80%;
+    padding: 0 0 1.25em 0;
 }
 .gutter-header
 {
     width: 100%;
     top: 0;
     margin: 0 0 10px 0;
+
+    background-color: #111;
+}
+.gutter:hover .gutter-header
+{
+    background-color: #333;
 }
 .gutter h2, .gutter p
 {
@@ -97,25 +152,14 @@ h3
 }
 .gutter p
 {
-    color: #888;
+    color: #999;
     font-family: Palatino;
     font-style: italic;
 }
-.gutter:hover 
-{
-    box-shadow: 1px 1px 7px rgba(255, 255, 255, .5);
-}
-.gutter:hover .gutter-header
-{
-    background-color: #111;
-}
-.gutter:hover video
-{
-    max-width: 100%;
-}
+
 #popout
 {
-    z-index: 1;
+    z-index: 3;
     display: none;
     align-items: center;
     justify-content: center;
@@ -161,51 +205,332 @@ h3
 }
 
 /* Film Reel */
-.inline
-{
-    display: inline;
-}
+
+
 .filmReel
 {
-    position: absolute;
-    /* SAME position: use for setting fixed point on scroll */
-    /* top: 493px; */
-    bottom: -100px;
     z-index: 2;
-    background-color: rgba(255, 0, 0, .3);
-    /* background-image: url("video/FilmStrip.png"); */
-    /* background-position: center; */
-        /* RESIZE to film strip img size */
-    height: 250px;
+    position: fixed;
+    top: 12em;
+    height: 17em;
     width: 100vw;
-    margin: 0 0 100px 0;
+    margin: 0 0 6.25em 0;
+    background-image: url("../video/FilmStrip.png"); 
+    background-position: center;
+    background-repeat: repeat-x;
 }
-
+/* .inline
+{
+    display: inline;
+} */
 .previousButton, .nextButton
 {
     height: 0;
     width: 0;
-    border-top: 60px solid transparent;
-    border-bottom: 60px solid transparent;
+    margin-top: 3.5em; 
+    border-top: 5em solid transparent;
+    border-bottom: 5em solid transparent;
 }
 .previousButton
 {
-    border-right: 60px solid rgba(255, 255, 255, .7);
+    margin-left: 2em;
+    border-right: 5em solid rgba(255, 255, 255, .7);
 }
 .previousButton:hover
 {
-    cursor: pointer;
-    border-right: 60px solid rgba(255, 255, 255, 1);
+    border-right: 5em solid rgba(255, 255, 255, 1);
 }
 .nextButton
 {
     position: absolute;
+    margin-right: 2em;
     top: 0;
     right: 0;
-    border-left: 60px solid rgba(255, 255, 255, .7);
+    border-left: 5em solid rgba(255, 255, 255, .7);
 }
 .nextButton:hover
 {
-    cursor: pointer;
-    border-left: 60px solid rgba(255, 255, 255, 1);
+    border-left: 5em solid rgba(255, 255, 255, 1);
 }
+
+.fixedReel
+{
+    position: fixed;
+    top: 12em;
+    background-color: darkslateblue;
+}
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+
+/* @media only screen  and (min-width : em) 
+{
+
+} */
+
+
+
+
+/* Desktop Media Query: */
+/* 1080px */
+@media only screen  and (min-width : 67.5em) 
+{
+    body
+    {
+        box-sizing: border-box;
+        background-color: #222;
+        max-width: 90%;
+        background-repeat: no-repeat;
+    }
+    .heading
+    {
+        height: 15vw;
+        margin: 100px 0 0;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    h1, h3
+    {
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 100vw;
+        padding: 30px 0 20px 80px;
+        text-align: left;
+    }
+    h1
+    {
+        height: 140px;
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        letter-spacing: 5px;
+        font-family: Verdana, sans-serif;
+        background-color: #111;
+        box-shadow: 3px 3px 10px #444;
+    }
+    h3
+    {
+        height: 240px;
+        position: absolute;
+        z-index: 0;
+        margin: 100px 0 0;
+        color: #888;
+        font-family: Palatino;
+        font-style: italic;
+        padding-top: 50px;
+    }
+    .menu-icon, .sidebar 
+    {
+        z-index: 3;
+    }
+    .menu-icon
+    {
+        top: 1.25em;
+        right: 1.25em;
+        width: 3.125em;
+        height: 2.75em;
+    }
+    .menu-icon span {
+        height: .25em;
+        margin: .375em 0;
+    }
+    .sidebar {
+        left: -18.75em;
+        width: 18.75em;
+        padding: 1.25em;
+    }
+    .sidebar .menu {
+        padding: 2.5em 0;
+    }
+    .sidebar .menu li a {
+        padding: .625em 0;
+        font-size: 1.125em;
+    }
+    .menu-icon.active span {
+        width: calc(100% - 1em);
+        top: calc(50% - .5em);
+    }
+    .social-icon {
+        bottom: 2.5em;
+        width: 0 1.25em;
+      }
+      /* .social-icon li {
+        width: 20%;
+
+      } */
+    .social-icon li a {
+        font-size: 1.125em;
+        width: 2.5em;
+        height: 2.5em;
+        line-height: 2.5em;
+    }
+    .logo2 {
+        width: 6.25em;
+        height: 6.25em;
+    }
+    .flex 
+    {
+        display: flex;
+        flex-flow: row wrap;
+            /* delete: */
+            /* border: 2px solid white; */
+    }
+    .videoBody
+    {
+        align-items: start;
+        justify-content: start;
+            /* border: 2px solid white; */
+        margin: 34.375em auto;
+        padding: 0 0 0 3.75em;
+    }
+    .video 
+    {
+        cursor: pointer;
+        max-width: 90%;
+    }
+    .gutter
+    {
+        height: fit-content;
+        max-width: 33%;
+        margin: 0;
+        padding: 0 0 20px 0;
+    }
+    .gutter-header
+    {
+        width: 100%;
+        top: 0;
+        margin: 0 0 10px 0;
+    }
+    .gutter h2, .gutter p
+    {
+        padding: 5px 25px;
+        text-align: left;
+        color: #fff;
+        letter-spacing: 1px;
+    }
+    .gutter p
+    {
+        color: #888;
+        font-family: Palatino;
+        font-style: italic;
+    }
+    .gutter:hover 
+    {
+        box-shadow: 1px 1px 7px rgba(255, 255, 255, .5);
+    }
+    .gutter:hover .gutter-header
+    {
+        background-color: #111;
+    }
+    .gutter:hover video
+    {
+        max-width: 100%;
+    }
+    #popout
+    {
+        z-index: 3;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, .8);
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+    .exit-popout
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 28px;
+        right: 28px;
+        height: 80px;
+        width: 80px;
+        background-color: rgb(60, 60, 60);
+        color: #fff;
+        cursor: pointer;
+    }
+    .exit-popout span {
+        height: 4px;
+        display: block;
+        background: #fff;
+        margin: 6px 0;
+        transition: 0.5s;
+        position: absolute;
+        width: calc(100% - 16px);
+        top: calc(50% - 8px);
+    }
+    .exit-popout span:nth-child(1) {
+        transform: rotate(45deg);
+    }
+    .exit-popout span:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+
+    .exit-popout span:nth-child(2) {
+        display: none;
+    }
+
+    /* Film Reel */
+    .inline
+    {
+        display: inline;
+    }
+    .filmReel
+    {
+        position: absolute;
+        top: 492px;
+    }
+    .previousButton, .nextButton
+    {
+        border-top: 3.75em solid transparent;
+        border-bottom: 3.75em solid transparent;
+    }
+    .previousButton
+    {
+        border-right: 3.75em solid rgba(255, 255, 255, .7);
+    }
+    .previousButton:hover
+    {
+        cursor: pointer;
+    }
+    .nextButton
+    {
+        border-left: 3.75em solid rgba(255, 255, 255, .7);
+    }
+    .nextButton:hover
+    {
+        cursor: pointer;
+    }
+
+    
+    .fixedReel
+    {
+        position: fixed;
+        top: 140px;
+        background-color: darkslateblue;
+    }
+}
+    
+
+
+
+/* Large screens */
+@media only screen  and (min-width : 1920px) 
+{
+    .videoBody
+    {
+        margin: 400px auto;
+    }
+
+}
+
+/* Use orientation to remove fixed pos reel from landscape mode phones; when category is clicked, just navigate up to #filmReel */
