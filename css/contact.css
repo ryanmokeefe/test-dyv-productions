@@ -1,83 +1,69 @@
-
 body{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background: url("../img/earth.jpg");
-    width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    font-family: 'Custard', serif;
+    font-family: verdana;
+    font-size: 16px;
 }
 
 
-.contact{
-    margin: 0 auto;
-    color: rgb(233, 231, 208);
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Coustard', serif; 
-    font-size: 60px;
-    transition: all 4s ease-in-out;
-}
-
-.contact-form{
-    margin: 0 auto;
-    padding-top: 300px;
-   
-}
-
-.contact h1{
-    font-size: 32px;
-    line-height: 10px;
-}
-
-form{
-    margin-top: 50px;
-
-    transition: all 4s ease-in-out;
-   
-}
-
-.form-control{
-    width: 600px;
-    background: black;
-    opacity: 0.8;
-    border: none;
+input[type=text], input[type=email], textarea{
     outline: none;
-    border-bottom: 1px solid gray;
-    color: #fff;
-    font-size: 18px;
-    margin-bottom: 16px;
+    transition: .2 all linear;
+    display: flex;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    border: 1px solid silver;
+    border-top: none;
+    border-radius: 4px;
+    padding: 8px;
 }
 
-input{
-    height: 45px;
+input:focus, textarea:focus{
+    border: 1px solid rgb(128, 128, 128);
 }
 
-form .submit{
-    background: rgb(61, 58, 15);
-    border-color: transparent;
-    color: #fff;
-    font-size: 20px;
+input, textarea{
+    margin: 10px 0;
+}
+
+textarea{
+    height: 200px;
+}
+
+#glob_content{
+    background-color: black;
+    opacity: 0.6;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 4px;
+    border: 3px rgb(128, 128, 128);
+    margin-top: 150px;
+}
+
+#form_content{
+    padding: 20px;
+}
+
+#title{
+    color: white;
+    background-color: rgb(128, 128, 128);
     font-weight: bold;
-    letter-spacing: 2px;
-    height: 50px;
-    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 0px 15px black;
+    padding: 20px;
+    font-size: 20px;
 }
 
-form .submit:hover{
-    background: rgb(94, 24, 24);
-    cursor: pointer;
+input[type=submit]{
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(128, 128, 128);
+    border-radius: 4px;
+    border: 1px solid;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
 }
 
-
- @media only screen and (max-width: 1024px) {
-    body {
-        background-size: 220vh;
-        }
-      }
-
-
+input[type=submit]:hover{
+    background-color: blue
+}
