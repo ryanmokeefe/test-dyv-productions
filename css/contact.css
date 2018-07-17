@@ -67,3 +67,10 @@ input[type=submit]{
 input[type=submit]:hover{
     background-color: blue
 }
+
+@media only screen and (max-width: 1024px) {
+    body {
+        background-size: 220vh;
+        }
+
+    }
