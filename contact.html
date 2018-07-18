@@ -8,6 +8,8 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/contact.css">
     <link href="https://fonts.googleapis.com/css?family=Coustard" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -22,16 +24,20 @@
     <title>Contact</title>
 </head>
 <body>
-     <h1 class="contact">Contact</h1>
-      <div class="contact-form">
-          <form id="contact-form" method="post" action="">
-              <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
-              <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
+        <div id="contact">Contact</div>
+    <div class="content">
+            <p>Send us a message and we will respond as soon as possible.</p>
+        <div id="form_content">
+        <form>
+            <input type="text" name="name" placeholder="Name" />
+            <input type="email" name="email" placeholder="Email" />
+            <input type="text" name="phone" placeholder="Phone" />
+            <textarea name="message" placeholder="Message"></textarea>
+            <input type="submit" name="send" placeholder="Send" />        
+        </form>
+        </div>
 
-              <textarea name="message" class="form-control" placeholder="Message" rows="4"></textarea><br>
-
-              <input type="submit" class="form-control submit" value="SEND MESSAGE">
-      </div>
+    </div>
 
 
 

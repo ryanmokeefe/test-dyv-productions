@@ -1,83 +1,146 @@
-
 body{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background: url("../img/earth.jpg");
+    font-family: verdana;
     width: 100%;
     height: auto;
+    font-size: 16px;
+    background: url("../img/earth.jpg");
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     background-position: center;
-    font-family: 'Custard', serif;
 }
 
 
-.contact{
-    margin: 0 auto;
-    color: rgb(233, 231, 208);
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Coustard', serif; 
-    font-size: 60px;
-    transition: all 4s ease-in-out;
-}
-
-.contact-form{
-    margin: 0 auto;
-    padding-top: 300px;
-   
-}
-
-.contact h1{
-    font-size: 32px;
-    line-height: 10px;
-}
-
-form{
-    margin-top: 50px;
-
-    transition: all 4s ease-in-out;
-   
-}
-
-.form-control{
-    width: 600px;
-    background: black;
-    opacity: 0.8;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid gray;
-    color: #fff;
-    font-size: 18px;
-    margin-bottom: 16px;
-}
-
-input{
-    height: 45px;
-}
-
-form .submit{
-    background: rgb(61, 58, 15);
-    border-color: transparent;
-    color: #fff;
+input[type=text], input[type=email], textarea{
     font-size: 20px;
+    outline: none;
+    transition: .2 all linear;
+    display: flex;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    /* border: 1px solid silver; */
+    border-top: none;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: black;
+    opacity: 0.6;
+}
+p{
+    text-align: center;
+    color: rgb(214, 210, 145);
+    font-size: 30px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+input:focus, textarea:focus{
+    border: 1px solid rgb(128, 128, 128);
+}
+
+input, textarea{
+    margin: 10px 0;
+}
+
+textarea{
+    height: 200px;
+    background-color: rgb(214, 210, 145);
+}
+
+
+.content{
+    /* background-color: none;
+    border-left: none;
+    border-right: none; */
+    /* background-color: rgb(211, 209, 172); */
+    opacity: 4; 
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 4px;
+    border: 0px rgb(128, 128, 128); 
+    margin-top: 40px;
+}
+
+#form_content{
+    padding: 20px;
+}
+
+#contact{
+    margin-top: 50px;
+    color: rgb(214, 210, 145);
+    /* background-color: rgb(0, 0, 0); */
+    /* opacity: 0.8; */
     font-weight: bold;
-    letter-spacing: 2px;
-    height: 50px;
-    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 0px 15px black;
+    padding: 20px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 80px;
+    animation: contact 6s 1;
 }
 
-form .submit:hover{
-    background: rgb(94, 24, 24);
-    cursor: pointer;
+
+
+@keyframes contact{
+    40%{
+        color: rgb(49, 49, 85);
+        opacity: 0.8;
+        margin-bottom: -40px;
+    }
+    30%{
+        letter-spacing: 65px;
+        margin-bottom: -40px;
+    }
+    185%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
 }
 
+input[type=submit]{
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(128, 128, 128);
+    border-radius: 4px;
+    border: 1px solid;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    opacity: 0.9;
+}
 
- @media only screen and (max-width: 1024px) {
+input[type=submit]:hover{
+    background-color: rgb(214, 210, 145);
+}
+
+@media only screen and (max-width: 1024px) {
     body {
         background-size: 220vh;
         }
-      }
 
+    }
 
+    @media only screen and (max-width: 700px) {
+        #contact {
+            background-color: none;
+            opacity: 1;
+            font-size: 40px;
+            margin-top: 100px;
+            animation: contact 8s 1;
+            }
+
+            @keyframes contact{
+                20%{
+                    color: rgb(49, 49, 85);
+                    opacity: 0.8;
+                    margin-bottom: -40px;
+                }
+                30%{
+                    letter-spacing: 65px;
+                    margin-bottom: -40px;
+                }
+                80%{
+                    letter-spacing: 8px;
+                    margin-bottom: -40px;
+                }
+            }
+        }
