@@ -55,11 +55,11 @@ body.design {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 200vh;
+  min-height: 50vh;
 }
 .design__img--sticky img {
+  margin: 2rem 0 0 0;
   display: block;
-  border: 5px solid rgba(255, 0, 0, 0.8);
   max-width: 90%;
 }
 .design__content {
@@ -81,7 +81,7 @@ body.design {
   font-family: sans-serif;
   margin: 0 0 0 0;
   text-transform: uppercase;
-  height: 100vh;
+  height: 200vh;
 }
 .design__content__spacer h1 {
   order: 1;
@@ -272,6 +272,7 @@ body.design {
 
 /* Slideshow container */
 .slideshow-container {
+  width: 80%;
   margin: 5rem 0 0 0;
   height: auto;
 }
@@ -281,35 +282,19 @@ body.design {
   display: none;
 }
 
+.slideshow__controls {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.slideshow__controls :hover {
+  cursor: pointer;
+}
+
 .design__img--carousel {
   width: 100%;
-  height: auto;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-  background-color: #717171;
+  max-height: 20rem;
 }
 
 /* Fading animation */
@@ -337,7 +322,7 @@ body.design {
     opacity: 1;
   }
 }
-.sticky {
+.sticking {
   position: fixed;
   width: 100%;
   top: 0;
@@ -345,9 +330,14 @@ body.design {
   z-index: 100;
 }
 
-.sticky h1,
-.sticky h4 {
+.sticking h1,
+.sticking h4 {
   color: white;
+}
+
+#prev,
+#next {
+  height: 80px;
 }
 
 @media only screen and (max-width: 600px) {
