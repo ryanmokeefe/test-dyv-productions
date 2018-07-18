@@ -223,6 +223,8 @@ h3
     background-image: url("../video/FilmStrip.png"); 
     background-position: center;
     background-repeat: repeat-x;
+    /* background-size: cover; */
+    background-size: auto 100%;
 }
 .fixedReel
 {
@@ -410,7 +412,7 @@ h3
         position: absolute;
         top: 492px;
         height: 10em;
-        background-size: cover;
+        /* background-size: contain; */
     }
     .fixedReel
     {
