@@ -49,9 +49,14 @@ var clearPopout = () => {
     popout.style.display = "none";
 };
 
+
+
+            // Separate files for popout and vid scroll?
+
+
 // Fix Film Reel to top on scroll:
 
-var reel = $("#filmReel");
+var reel = $(".filmReel");
 var reelPos = reel.offset();
 $(window).resize(function() {
     reelPos = reel.offset();
@@ -59,9 +64,8 @@ $(window).resize(function() {
 });
 
 
-// make responsive (bool if window is X size / or if filmReel starts at fixed-class?)
 $(window).scroll(function() {
-    if ($(window).scrollTop() >= (reelPos.top - 140))
+    if ($(window).scrollTop() >= (reelPos.top - 100))
     {
         reel.addClass("fixedReel");
     } else 
@@ -69,3 +73,13 @@ $(window).scroll(function() {
         reel.removeClass("fixedReel");
     }
 });
+
+
+
+
+// Create Video array of divs on page
+
+// Scroll through array onClick prev/next button
+
+// Change video array shown for each category clicked
+
