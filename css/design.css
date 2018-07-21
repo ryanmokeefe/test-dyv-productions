@@ -284,17 +284,20 @@ body.design {
 
 .slideshow__controls {
   position: absolute;
-  top: 40%;
-  left: 10%;
+  top: 30vh;
   width: 80%;
-  display: flex;
+  display: block;
   flex-flow: row nowrap;
   justify-content: space-between;
 }
-
 #prev,
 #next {
-  height: 80px;
+  width: 10%;
+  height: auto;
+}
+
+#prev {
+  margin: 0 77% 0 1%;
 }
 
 .slideshow__controls :hover {
