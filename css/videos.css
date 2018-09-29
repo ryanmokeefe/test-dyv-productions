@@ -4,17 +4,31 @@
 body
 {
     box-sizing: border-box;
-    background-color: #222;
-    max-width: 90%;
+    /* max-width: 90%; */
+    background-image: url("../img/nightsky.png");
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 80% 0%;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
 }
 .heading
 {
-    height: 15vw;
-    margin: 6.25em 0 0;
+    width: 100vw;
+    /* height: 30em; */
+    height: 50vh;
+    margin: 0 0;
+    padding: 0;
     box-sizing: border-box;
     overflow: hidden;
 }
+
+/* .h1-bgcolor
+{
+    background: linear-gradient(#111, #111, transparent);
+} */
+
 h1, h3
 {
     box-sizing: border-box;
@@ -22,19 +36,20 @@ h1, h3
     width: 100vw;
     padding: .5em 0 1.25em 1em;
     text-align: left;
+    text-transform: uppercase;
 }
 h1
 {
-    height: 4em;
     z-index: 1;
     position: fixed;
-    top: 0;
-    font-family: Verdana, sans-serif;
+    top: -.5em;
+    height: 4em;
+    margin: 0;
     text-align: left;
-    letter-spacing: .5em;
-    line-height: 1.5em;
-    background-color: #111;
-    box-shadow: 3px 3px 10px #444;
+    /* letter-spacing: .5em; */
+    /* line-height: 1.5em; */
+    /* background-color: #111; */
+    background-color: #999;
 }
 h3
 {
@@ -47,6 +62,8 @@ h3
     font-family: Palatino;
     color: #999;
 }
+
+
 .menu-icon, .sidebar 
 {
     z-index: 3;
@@ -109,14 +126,15 @@ h3
 }
 .videoBody
 {
-        border: 2px solid white;
+        /* border: 2px solid white; */
+        background-color: #111;
 
     align-items: center;
     justify-content: space-between;
     position: absolute;
     height: fit-content;
-    width: 90vw;
-    margin: 34.375em auto;
+    width: 94vw;
+    margin: 34.375em 0;
     padding: 0 0 0 3.75em;
 }
 .categories
@@ -127,42 +145,7 @@ h3
     font-family: Verdana, sans-serif;
     color: #888;
 }
-.video 
-{
-    width: 100%;
-    height: 100%;
-}
-.gutter
-{
-    width: 80%;
-    padding: 0 0 1.25em 0;
-}
-.gutter-header
-{
-    width: 100%;
-    top: 0;
-    margin: 0 0 10px 0;
-    background-color: #111;
-}
-.gutter:hover .gutter-header
-{
-    background-color: #333;
-}
-.gutter h2, .gutter p
-{
-    padding: 5px 25px;
-    text-align: left;
-    letter-spacing: 1px;
-}
-.gutter h2 
-{
-    color: #fff;
-}
-.gutter p
-{
-    color: #888 !important;
-    font-family: Palatino;
-}
+
 #popout
 {
     z-index: 3;
@@ -210,36 +193,21 @@ h3
     display: none;
 }
 
-/* Film Reel */
-
-.filmReel
-{
-    z-index: 2;
-    position: fixed;
-    top: 12em;
-    height: 17em;
-    width: 100vw;
-    margin: 0 0 6.25em 0;
-    background-image: url("../video/FilmStrip.png"); 
-    background-position: center;
-    background-repeat: repeat-x;
-    /* background-size: cover; */
-    background-size: auto 100%;
-}
-.fixedReel
-{
-    position: fixed;
-    top: 12em;
-    background-color: cadetblue;
-}
-.videoScroll
+.video
 {
     box-sizing: border-box;
-    overflow: hidden;
-    background-color: darkslategray;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 1px solid red;
+    background-color: rgba(255, 255, 255, .5);
 }
+
 .previousButton, .nextButton
 {
+    /* position: absolute; */
+    z-index: 5;
+    top: 0;
     height: 0;
     width: 0;
     margin-top: 3.5em; 
@@ -249,6 +217,7 @@ h3
 .previousButton
 {
     margin-left: 2em;
+    left: 0;
     border-right: 5em solid rgba(255, 255, 255, .7);
 }
 .previousButton:hover
@@ -257,9 +226,7 @@ h3
 }
 .nextButton
 {
-    position: absolute;
     margin-right: 2em;
-    top: 0;
     right: 0;
     border-left: 5em solid rgba(255, 255, 255, .7);
 }
@@ -267,9 +234,6 @@ h3
 {
     border-left: 5em solid rgba(255, 255, 255, 1);
 }
-
-
-
 
 
 
@@ -284,17 +248,19 @@ h3
     body
     {
         max-width: 90%;
+        background-position: 25% 13%;
+
     }
     .heading
     {
         margin: 100px 0 0;
+        padding: 0;
     }
-    h1, h3
-    {
-        padding: 10px 0 20px 80px;
-    }
+    
     h1
     {
+        padding: 0 0 20px 80px;
+
         height: 2em;
         letter-spacing: 5px;
     }
@@ -302,10 +268,13 @@ h3
     {
         height: 240px;
         margin: 100px 0 0;
+        padding: 50px 0 20px 80px;
         font-style: italic;
         font-size: 1.5em;
-        padding-top: 50px;
+
     }
+
+
     .menu-icon
     {
         top: 1.25em;
@@ -356,73 +325,24 @@ h3
     {
         align-items: start;
         justify-content: start;
-        margin: 21em auto;
+        margin: 0 0;
+        padding-top: .25em;
+        width: 96vw;
     }
     .categories
     {
+        font-size: 2em;
         margin: 2em .5em 1em;
     }
-    .video 
-    {
-        cursor: pointer;
-        max-width: 90%;
-    }
-    .gutter
-    {
-        height: fit-content;
-        max-width: 25%;
-        margin: 1.25em auto;
-    }
-    .gutter-header
-    {
-        background-color: transparent;
-    }
-    .gutter h2, .gutter p
-    {
-        padding: 5px 25px;
-        text-align: left;
-        color: #fff;
-        letter-spacing: 1px;
-    }
-    .gutter p
-    {
-        font-style: italic;
-    }
-    .gutter:hover 
-    {
-        box-shadow: 1px 1px 7px rgba(255, 255, 255, .5);
-    }
-    .gutter:hover .gutter-header
-    {
-        background-color: #111;
-    }
-    .gutter:hover video
-    {
-        max-width: 100%;
-    }
+    
 
-    /* Film Reel */
-
-    .inline
+    .video
     {
-        display: inline;
+        width: auto;
+        margin: 0 auto;
+        padding: 0;
     }
-    .filmReel
-    {
-        position: absolute;
-        top: 492px;
-        height: 10em;
-        /* background-size: contain; */
-    }
-    .fixedReel
-    {
-        position: fixed;
-        top: 6em;
-    }
-    .videoScroll
-    {
-
-    }
+    
     .previousButton, .nextButton
     {
         margin-top: 1.25em; 
@@ -448,6 +368,7 @@ h3
         border-left: 3.8em solid rgba(255, 255, 255, 1);
     }
 
+
 }
     
 
@@ -455,10 +376,11 @@ h3
 /* Large screens */
 @media only screen  and (min-width : 1920px) 
 {
-    .videoBody
+    /* .videoBody
     {
         margin: 400px auto;
-    }
+
+    } */
 
 }
 
